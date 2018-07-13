@@ -1,8 +1,0 @@
-{
-  "name": "skeleton-loader",
-  "app_id": "73e42081",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
-}
