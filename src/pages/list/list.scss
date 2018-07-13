@@ -1,3 +1,27 @@
 page-list {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
 
+  .skeleton-rectangle {
+    width: 56px;
+    height: 56px;
+    border-radius: 2px;
+    @extend .animated-background;
+  }
+
+  .skeleton-title, .skeleton-text {
+    height: 14px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    @extend .animated-background;
+  }
+  .skeleton-text {
+    height: 8px;
+    width: 80%;
+  }
 }

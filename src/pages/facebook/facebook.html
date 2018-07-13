@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar color="facebook">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-searchbar placeholder="Search" (ionFocus)="goToSearch()"></ion-searchbar>
+
+    <ion-buttons end>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="ios-chatbubbles"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-muted">
+  <ion-list>
+    <ion-item no-lines>
+      <ion-avatar item-start>
+        <skeleton-item height="36px" width="36px" rounded></skeleton-item>
+      </ion-avatar>
+      <skeleton-item height="16px" width="67%"></skeleton-item>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-row>
+        <ion-col text-center>
+          <skeleton-item width="60px" inline></skeleton-item>
+        </ion-col>
+        <ion-col text-center>
+          <skeleton-item width="60px" inline></skeleton-item>
+        </ion-col>
+        <ion-col text-center>
+          <skeleton-item width="60px" inline></skeleton-item>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item no-lines>
+      <skeleton-item width="50px"></skeleton-item>
+      <div>
+        <skeleton-item *ngFor="let i of [0,1,2,3,4,5,6]" height="56px" width="56px" rounded inline style="margin-right: 4px"></skeleton-item>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item no-lines>
+      <ion-avatar item-start>
+        <skeleton-item height="36px" width="36px" rounded></skeleton-item>
+      </ion-avatar>
+      <skeleton-item height="16px"></skeleton-item>
+      <skeleton-item height="8px" width="67%"></skeleton-item>
+    </ion-item>
+    <ion-item no-lines>
+      <skeleton-item height="14px"></skeleton-item>
+      <skeleton-item height="14px"></skeleton-item>
+      <skeleton-item width="67%"></skeleton-item>
+    </ion-item>
+    <ion-item no-lines>
+      <skeleton-item height="180px" no-animated></skeleton-item>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="white">
+
+  </ion-toolbar>
+</ion-footer>

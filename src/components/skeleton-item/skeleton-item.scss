@@ -1,0 +1,67 @@
+$skeletonLineSpacing: 6px;
+$animationDuration: 1s;
+$defaultBorderRadius: 4px;
+$gradientColor1: rgba(130,130,130,.2);
+$gradientColor2: rgba(130,130,130,.3);
+
+skeleton-item {
+  display: block;
+
+  &[inline] {
+    display: inline-block;
+    div {
+      display: inline-block;
+    }
+  }
+
+  &[rounded] div {
+    border-radius: 999em;
+  }
+
+  &[radius] div {
+    border-radius: $defaultBorderRadius;
+  }
+
+  div {
+    @extend .animated-background;
+  }
+
+  &[no-animated] div {
+    animation: none!important;
+    background: $gradientColor1;
+  }
+}
+
+skeleton-item + skeleton-item {
+  margin-top: $skeletonLineSpacing;
+}
+
+.animated-background {
+  animation-duration: $animationDuration;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: $gradientColor1;
+  background: linear-gradient(to right, $gradientColor1 8%, $gradientColor2 18%, $gradientColor1 33%);
+  background-size: 800px 100px;
+  position: relative;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}

@@ -1,0 +1,22 @@
+page-table {
+  .ionic-table {
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);
+
+    thead tr {
+      background-color: #fff !important;
+      border-bottom: 1px solid rgba(0,0,0,.12);
+    }
+
+    tr {
+      background-color: #f9f9f9;
+      &:nth-child(2n+1) {
+        background-color: #fff;
+      }
+    }
+
+    th, td {
+      padding: 12px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Table</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-muted">
+  <table class="ionic-table">
+    <colgroup>
+      <col style="width:10%">
+      <col style="width:60%">
+      <col style="width:30%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>
+          <skeleton-item width="16px"></skeleton-item>
+        </th>
+        <th>
+          <skeleton-item></skeleton-item>
+        </th>
+        <th>
+          <skeleton-item></skeleton-item>
+        </th>
+      </tr>
+    </thead>
+    <tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]">
+      <td>
+        <skeleton-item width="16px"></skeleton-item>
+      </td>
+      <td>
+        <skeleton-item></skeleton-item>
+      </td>
+      <td>
+        <skeleton-item></skeleton-item>
+      </td>
+    </tr>
+  </table>
+</ion-content>

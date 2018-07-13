@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="white">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-searchbar mode="ios" placeholder="Search" (ionFocus)="goToSearch()"></ion-searchbar>
+
+    <ion-buttons end>
+      <button ion-button icon-only menuToggle color="muted">
+        <ion-icon name="ios-chatbubbles"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="pin-container">
+    <ion-col>
+      <div class="pin-item">
+        <skeleton-item height="220px" radius="8px" style="margin-bottom: 12px" no-animated></skeleton-item>
+        <skeleton-item height="12px" width="67%"></skeleton-item>
+      </div>
+      <div class="pin-item">
+        <skeleton-item height="120px" radius="8px" style="margin-bottom: 12px" no-animated></skeleton-item>
+        <skeleton-item height="12px" width="67%"></skeleton-item>
+      </div>
+      <div class="pin-item">
+        <skeleton-item height="180px" radius="8px" style="margin-bottom: 12px" no-animated></skeleton-item>
+        <skeleton-item height="12px" width="67%"></skeleton-item>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="pin-item">
+        <skeleton-item height="150px" radius="8px" style="margin-bottom: 12px" no-animated></skeleton-item>
+        <skeleton-item height="12px" width="67%"></skeleton-item>
+      </div>
+      <div class="pin-item">
+        <skeleton-item height="240px" radius="8px" style="margin-bottom: 12px" no-animated></skeleton-item>
+        <skeleton-item height="12px" width="67%"></skeleton-item>
+      </div>
+      <div class="pin-item">
+        <skeleton-item height="100px" radius="8px" style="margin-bottom: 12px" no-animated></skeleton-item>
+        <skeleton-item height="12px" width="67%"></skeleton-item>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="white">
+
+  </ion-toolbar>
+</ion-footer>
