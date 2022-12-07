@@ -1,4 +1,6 @@
 # Ionic 3 Skeleton Loader component
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmrhieu%2Fionic-skeleton-loader.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmrhieu%2Fionic-skeleton-loader?ref=badge_shield)
+
 
 ## Setup
 
@@ -47,3 +49,7 @@ You can add CSS classes or inline CSS as normal HTML element
 - {radius: string} set border-radius, default value is '4px'
 - {rounded} set border-radius to 999em to make rounded block when the height and width have the same value
 - {no-animated} disable animation effect
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmrhieu%2Fionic-skeleton-loader.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmrhieu%2Fionic-skeleton-loader?ref=badge_large)
